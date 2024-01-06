@@ -1,0 +1,6 @@
+@agenciaGoTour_HostAddress = http://localhost:5129
+
+GET {{agenciaGoTour_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
