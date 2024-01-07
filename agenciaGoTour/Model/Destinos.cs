@@ -16,6 +16,9 @@ namespace agenciaGoTour.Model
         [Column("Descricao")]
         public string Descricao { get; set; } = string.Empty;
 
+        [Column("Imagem")]
+        public string Imagem { get; set; } = string.Empty;
+
 
     }
 

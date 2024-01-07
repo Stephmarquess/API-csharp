@@ -3,11 +3,11 @@ using agenciaGoTour.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Games.Controllers
+namespace agenciaGoTour.Controllers
 {
 
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/Destinos")]
     public class DestinosController : ControllerBase
     {
 

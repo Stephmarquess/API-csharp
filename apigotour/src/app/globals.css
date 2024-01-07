@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--color-1: #0a1d55;
+	
+}
+
+body {
+	background-image: url('https://cdnsjengenhariae.nuneshost.com/wp-content/uploads/2023/09/ceu-sobre-as-nuvens-nuvens-cinematograficas-papel-de-parede-2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: inherit;
+	background-attachment: fixed;
+	font-family: 'Nunito', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+button {
+	background-color: #0a1d55;
+	border-radius: 6px;
+	box-shadow:  rgba(0, 0, 0, 0.22) 0px 0px 30px 10px;
+	color: white;
+	width: 50%;
+	font-size: 50px;
+	margin-top: 50px;
+}
+
+.logo-title {
+	color: white;
+	font-size: 30px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+
+main {	
+	min-height: 100vh;
+	background-color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 20px;	
+	
+}
+
+header, footer {
+	background-color: #0a1d55;
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+header img {
+	height: 70px;
+}
+
+ul {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+li {
+	list-style: none;
+	padding: 0 20px 0 20px;
+}
+
+.navbar a {
+	text-decoration: none;
+	font-size: larger;
+	font-weight: 400;
+	color: white;
+
+}
