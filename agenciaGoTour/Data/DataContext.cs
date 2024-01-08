@@ -24,11 +24,19 @@ namespace agenciaGoTour.Data
                 new Destinos { Id = 4, Nome = "Bariloche", Descricao = "Um dos lugares mais intensos e incríveis da Argentina. Lugares como impressionantes, lagos, arroios, rios de degelo e montanhas.", Imagem = "https://escapemagazine.com.br/wp-content/uploads/2023/08/winter-night-esqui-em-bariloche.jpg" }
 
             );
+
+            modelBuilder.Entity<Cliente>().HasData(
+                new Cliente { Id = 1, NomeCliente = "David Robert Jones", CPF = "02519956356", Email = "david@bowie.com", Endereco = "Ocean Beach, San Francisco" },
+                new Cliente { Id = 2, NomeCliente = "Gordon Matthew Thomas Sumner", CPF = "15945578962", Email = "sting@thepolice.com", Endereco = "Dogpatch, San Francisco" },
+                new Cliente { Id = 3, NomeCliente = "Alan Mathison Turing", CPF = "222145789623", Email = "alan@cryptanalyst.com", Endereco = "Bayside, Tierra Robada" },
+                new Cliente { Id = 4, NomeCliente = "Margaret Heafield Hamilton", CPF = "01578889623", Email = "margaret@tothemoon.com", Endereco = "Washington Street, Washington" }
+
+);
         }
 
+        public DbSet<Cliente> Cliente { get; set; }
 
-
-    }
+            }
 
 
 

@@ -18,6 +18,72 @@ namespace agenciaGoTour.Migrations
                 .HasAnnotation("ProductVersion", "8.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("agenciaGoTour.Model.Cliente", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    b.Property<string>("CPF")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("CPF");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("Email");
+
+                    b.Property<string>("Endereco")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("Endereco");
+
+                    b.Property<string>("NomeCliente")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("NomeCliente");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cliente");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CPF = "02519956356",
+                            Email = "david@bowie.com",
+                            Endereco = "Ocean Beach, San Francisco",
+                            NomeCliente = "David Robert Jones"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CPF = "15945578962",
+                            Email = "sting@thepolice.com",
+                            Endereco = "Dogpatch, San Francisco",
+                            NomeCliente = "Gordon Matthew Thomas Sumner"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CPF = "222145789623",
+                            Email = "alan@cryptanalyst.com",
+                            Endereco = "Bayside, Tierra Robada",
+                            NomeCliente = "Alan Mathison Turing"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CPF = "01578889623",
+                            Email = "margaret@tothemoon.com",
+                            Endereco = "Washington Street, Washington",
+                            NomeCliente = "Margaret Heafield Hamilton"
+                        });
+                });
+
             modelBuilder.Entity("agenciaGoTour.Model.Destinos", b =>
                 {
                     b.Property<int>("Id")
