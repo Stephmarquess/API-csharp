@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Header() {
 	return (
 
-	<header className='container'>
+	<header className='container text-center'>
 	<nav className="navbar navbar-expand-lg">
   <div className="container-fluid">
   <img src="logo.png" alt="logo" /> <span className="logo-title"> GoTour </span>
@@ -13,15 +13,14 @@ export default function Header() {
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav text-white">
-        <li className="nav-item">
-          
-		  <Link href="/API"> Destinos </Link>
-          
+      <li className="nav-item">          
+          <Link href="/Client">Clientes</Link>              
+            </li>
+        <li className="nav-item">          
+		  <Link href="/API"> Destinos </Link>          
         </li>
-        <li className="nav-item">
-          
-		  <Link href="/Contato">Contatos</Link>
-          
+        <li className="nav-item">          
+		  <Link href="/Contacts">Contatos</Link>          
         </li>
       </ul>
     </div>
