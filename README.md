@@ -1,4 +1,4 @@
-# API Agência de Viagens - API C# DOT .NET e consumo via NEXTJS
+# API Agência de Viagens - API C# .NET e consumo via NEXTJS
 
 <p> O projeto "GoTour", agência de viagens fictícia, foi desenvolvido para o Bootcamp FullStack da RECODE PRO, turma 2023.  </p>
     
